@@ -7,7 +7,7 @@ const notePath = `note/:noteId`
 export const RootRouter = () => {
     return (
         <Routes>
-            <Route path="/" element={<RootMainPage/>}>
+            <Route path="/SEOTLT" element={<RootMainPage/>}>
                 <Route index element={<></>} />
                 <Route path={notePath} element={<EditDialog />} />
             </Route>

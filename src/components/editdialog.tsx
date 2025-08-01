@@ -67,7 +67,7 @@ export const EditDialog : React.FC<React.PropsWithChildren<{fullScreen?: boolean
             onClick={() => { 
               const noteText = rteRef.current?.editor?.getHTML() ?? "";
               addNote({id: noteId === 'new' ? null : noteId , data: noteText})
-              navigate('/');
+              navigate('/SEOTLT');
             }}
           >
             <DoneIcon />
@@ -78,7 +78,7 @@ export const EditDialog : React.FC<React.PropsWithChildren<{fullScreen?: boolean
 
           <ListItemButton
             autoFocus
-            onClick={() => { navigate('/') }}
+            onClick={() => { navigate('/SEOTLT') }}
           >
             <CloseIcon />
             <ListItemText primary="Выйти без сохранения" />

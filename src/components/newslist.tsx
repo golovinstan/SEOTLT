@@ -46,6 +46,7 @@ export function NewsList() {
               flexDirection: "column",
               justifyContent: "space-between",
               flexGrow: 1,
+              minWidth: "250px"
             }}
           >
             <CardContent>
@@ -64,7 +65,7 @@ export function NewsList() {
                 justifyContent: "right",
               }}
             >
-              <IconButton onClick={() => { navigate(`/note/${id}`) }}>
+              <IconButton onClick={() => { navigate(`note/${id}`) }}>
                 <EditIcon />
               </IconButton>
               <IconButton onClick={() => {

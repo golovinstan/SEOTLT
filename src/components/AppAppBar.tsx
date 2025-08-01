@@ -12,6 +12,7 @@ import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import ColorModeIconDropdown from ".././theme/ColorModeIconDropdown";
 import Sitemark from "./SitemarkIcon";
 import { Link } from "react-router-dom";
+import { Typography } from '@mui/material';
 
 export function AppAppBar() {
   const [open, setOpen] = React.useState(false);
@@ -33,9 +34,11 @@ export function AppAppBar() {
     >
       <Container maxWidth="lg">
         <StyledToolbar variant="dense" disableGutters>
-          <Box sx={{ flexGrow: 1, display: "flex", alignItems: "left", px: 0 }}>
+          <Box sx={{ flexGrow: 1, display: "flex", alignItems: "left", justify: 'center', px: 0 }}>
             <Sitemark />
-            SEOTLT
+            <Typography color="textPrimary" >
+              SEOTLT
+            </Typography>            
           </Box>
           <Box sx={{ display: { xs: "flex" }, gap: 1 }}>
             <ColorModeIconDropdown size="medium" />
@@ -66,7 +69,7 @@ export function AppAppBar() {
 
                 <MenuItem>
                   <IconButton onClick={toggleDrawer(false)}>
-                    <Link to='/note/new'>Note</Link>
+                    <Link to='/SEOTLT/note/new'>New</Link>
                   </IconButton>                
                 </MenuItem>
               </Box>
